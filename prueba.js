@@ -1,0 +1,1 @@
+javaconsole.log("Bienvenido a Ookini")

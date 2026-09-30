@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okini | Café de Especialidad</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --mint: #0000fe;
+            --mint-dark: #00f999;
+            --mint-light: #f0fdf4;
+            --mint-muted: #dcfce7;
+            --dark: #1e293b;
+            --gray: #64748b;
+            --light: #f8fafc;
+            --white: #ffffff;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            color: var(--dark);
+            background-color: var(--white);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, .brand-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* --- NAVBAR --- */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 5%;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo span {
+            color: var(--mint-dark);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--mint-dark);
+        }
+
+        .btn-nav {
+            background-color: var(--mint);
+            color: var(--dark) !important;
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .btn-nav:hover {
+            background-color: var(--mint-dark);
+            color: var(--white) !important;
+            transform: translateY(-2px);
+        }
+
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(30, 41, 59, 0.5), rgba(30, 41, 59, 0.6)), url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            padding: 0 1rem;
+            margin-top: 0;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 6vw, 5rem);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            margin-bottom: 2rem;
+            color: #e2e8f0;
+            font-weight: 300;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--mint);
+            color: var(--dark);
+            padding: 0.9rem 2.2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            box-shadow: 0 4px 14px rgba(74, 222, 128, 0.4);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--mint-dark);
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(34, 197, 94, 0.5);
+        }
+
+        /* --- SECTIONS GENERAL --- */
+        section {
+            padding: 6rem 10% 4rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--gray);
+            margin-bottom: 3.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* --- ABOUT SECTION --- */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 2rem;
+            margin-bottom: 1.2rem;
+            color: var(--dark);
+        }
+
+        .about-text p {
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .about-img img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 30px rgba(0,0,0,0.08);
+            object-fit: cover;
+            height: 400px;
+        }
+
+        .features-chips {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .chip {
+            background-color: var(--mint-light);
+            color: var(--mint-dark);
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: 1px solid var(--mint-muted);
+        }
+
+        /* --- MENU SECTION --- */
+        .menu-section {
+            background-color: var(--light);
+        }
+
+        .menu-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            background: var(--white);
+            border: 1px solid #cbd5e1;
+            padding: 0.7rem 1.8rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: var(--transition);
+            color: var(--gray);
+        }
+
+        .tab-btn.active, .tab-btn:hover {
+            background-color: var(--mint-dark);
+            border-color: var(--mint-dark);
+            color: var(--white);
+            box-shadow: 0 4px 12px rgba(34, 197, 94, 0.2);
+        }
+
+        .menu-container {
+            display: none;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .menu-container.active {
+            display: grid;
+        }
+
+        .menu-item {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            transition: var(--transition);
+            border-top: 4px solid var(--mint);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.8rem;
+        }
+
+        .item-header h4 {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .price {
+            color: var(--mint-dark);
+            font-weight: 700;
+            font-size: 1.15rem;
+        }
+
+        .menu-item p {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        /* --- QUIZ SECTION (COFFEE SELECTOR) --- */
+        .quiz-section {
+            background: linear-gradient(135deg, var(--mint-light), #ffffff);
+            border-radius: 30px;
+            margin: 4rem 5%;
+            padding: 4rem 3rem;
+            box-shadow: 0 10px 30px rgba(74, 222, 128, 0.1);
+            border: 1px solid var(--mint-muted);
+        }
+
+        .quiz-box {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .quiz-box h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .quiz-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .quiz-btn {
+            background: var(--white);
+            border: 2px solid #cbd5e1;
+            padding: 1rem;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: var(--transition);
+            font-family: 'Outfit', sans-serif;
+            font-size: 1rem;
+        }
+
+        .quiz-btn:hover, .quiz-btn.selected {
+            border-color: var(--mint-dark);
+            background-color: var(--mint-muted);
+            color: var(--dark);
+        }
+
+        .quiz-result {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: var(--white);
+            border-radius: 12px;
+            display: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* --- CONTACT & RESERVATION --- */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .info-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.2rem;
+        }
+
+        .info-card i {
+            font-size: 1.5rem;
+            color: var(--mint-dark);
+            background: var(--mint-light);
+            padding: 1rem;
+            border-radius: 12px;
+        }
+
+        .info-card h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .info-card p {
+            color: var(--gray);
+        }
+
+        .contact-form {
+            background: var(--light);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 0.9rem 1rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 1rem;
+            background: var(--white);
+            transition: var(--transition);
+        }
+
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+            outline: none;
+            border-color: var(--mint-dark);
+            box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.2);
+        }
+
+        .btn-submit {
+            width: 100%;
+            background: var(--dark);
+            color: var(--white);
+            border: none;
+            padding: 1rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-submit:hover {
+            background: var(--mint-dark);
+            color: var(--dark);
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: var(--dark);
+            color: var(--white);
+            text-align: center;
+            padding: 3rem 5%;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .social-icons a {
+            color: var(--white);
+            background: rgba(255,255,255,0.1);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            background: var(--mint);
+            color: var(--dark);
+        }
+
+        .footer-content p {
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 900px) {
+            .about-grid, .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .about-img img {
+                height: 300px;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--white);
+                padding: 1.5rem;
+                box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+                text-align: center;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .quiz-section {
+                margin: 2rem 1rem;
+                padding: 2.5rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <a href="#" class="logo"><i class="fa-solid fa-mug-hot" style="color: var(--mint-dark);"></i>Oki<span>ni</span></a>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#quiz">Recomendador</a></li>
+            <li><a href="#contact" class="btn-nav">Reservar / Visítanos</a></li>
+        </ul>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>El arte del café de especialidad</h1>
+            <p>Granos de origen único, tueste artesanal y momentos memorables en cada taza.</p>
+            <a href="#menu" class="btn-primary">Ver la Carta</a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="about-grid">
+            <div class="about-text">
+                <span style="color: var(--mint-dark); font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Nuestra Esencia</span>
+                <h3>Más que una taza, una experiencia sensorial</h3>
+                <p>En <strong>Okini</strong> seleccionamos cuidadosamente los mejores granos de pequeños productores locales e internacionales. Cuidamos cada detalle desde la molienda hasta la extracción perfecta para entregarte notas de cata únicas.</p>
+                <p>Nuestro espacio está diseñado para que te detengas un momento, respires y disfrutes de un café auténtico en un ambiente cálido y moderno.</p>
+                
+                <div class="features-chips">
+                    <span class="chip"><i class="fa-solid fa-seedling"></i> 100% de Origen</span>
+                    <span class="chip"><i class="fa-solid fa-fire-burner"></i> Tueste Artesanal</span>
+                    <span class="chip"><i class="fa-solid fa-heart"></i> Pet Friendly</span>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Café de especialidad Okini">
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section id="menu" class="menu-section">
+        <h2 class="section-title">Nuestra Carta</h2>
+        <p class="section-subtitle">Explora nuestras bebidas de especialidad y repostería casera</p>
+
+        <div class="menu-tabs">
+            <button class="tab-btn active" onclick="switchTab(event, 'espectacular')">Espressos & Clásicos</button>
+            <button class="tab-btn" onclick="switchTab(event, 'metodos')">Métodos de Extracción</button>
+            <button class="tab-btn" onclick="switchTab(event, 'reposteria')">Repostería & Panadería</button>
+        </div>
+
+        <!-- Tab 1: Espressos -->
+        <div id="espectacular" class="menu-container active">
+            <div class="menu-item">
+                <div>
+                    <div class="item-header">
+                        <h4>Espresso Doble</h4>
+                        <span class="price">$3.50</span>
+                    </div>
+                    <p>Extracción limpia y concentrada con notas cítricas y cuerpo sedoso.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="item-header">
+                        <h4>Cappuccino Okini</h4>
+                        <span class="price">$4.50</span>
+                    </div>
+                    <p>Doble shot de espresso con leche texturizada al punto exacto y arte latte.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="item-header">
+                        <h4>Latte Menta Sutil</h4>
+                        <span class="price">$4.80</span>
+                    </div>
+                    <p>Nuestra especialidad con infusión natural ligera de menta fresca y espresso.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="item-header">
+                        <h4>Flat White</h4>
+                        <span class="price">$4.20</span>
+                    </div>
+                    <p>Equilibrio perfecto entre espresso intenso y una capa fina de microespuma.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 2: Métodos -->
+        <div id="metodos" class="menu-container">
+            <div class="menu-item">
+                <div>
+                    <div class="item-header">
+                        <h4>V60 Pour Over</h4>
+                        <span class="price">$5.00</span>
+                    </div>
+                    <p>Extracción por goteo que resalta notas florales, brillantes y alta claridad en taza.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="item-header">
+                        <h4>Prensa Francesa</h4>
+                        <span class="price">$4.80</span>
+                    </div>
+                    <p>Cuerpo robusto, aceites esenciales preservados y un perfil de sabor profundo.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="item-header">
+                        <h4>Chemex</h4>
+                        <span class="price">$5.50</span>
+                    </div>
+                    <p>Filtro especializado que ofrece una taza sumamente limpia, aromática y elegante.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 3: Repostería -->
+        <div id="reposteria" class="menu-container">
+            <div class="menu-item">
+                <div>
+                    <div class="item-header">
+                        <h4>Roll de Canela Glaseado</h4>
+                        <span class="price">$4.00</span>
+                    </div>
+                    <p>Suave, esponjoso, recién horneado con notas de canela de Ceilán y queso crema.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="item-header">
+                        <h4>Panqué de Limón y Menta</h4>
+                        <span class="price">$3.80</span>
+                    </div>
+                    <p>Bizque húmedo casero con un toque refrescante de cítricos y hierbabuena.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="item-header">
+                        <h4>Avocado Toast de la Casa</h4>
+                        <span class="price">$6.50</span>
+                    </div>
+                    <p>Pan de masa madre tostado, aguacate fresco, semillas y huevo pochado opcional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUIZ SECTION -->
+    <section id="quiz">
+        <div class="quiz-section">
+            <div class="quiz-box">
+                <h3>¿Qué café deberías pedir hoy?</h3>
+                <p style="color: var(--gray);">Responde rápido y encuentra tu bebida ideal en Okini.</p>
+                
+                <div id="quiz-step-1">
+                    <p style="font-weight: 600; margin: 1.5rem 0 1rem;">¿Cómo prefieres tu café?</p>
+                    <div class="quiz-options">
+                        <button class="quiz-btn" onclick="selectCoffee('intenso')">Intenso y con leche</button>
+                        <button class="quiz-btn" onclick="selectCoffee('suave')">Suave y frutal (Filtro)</button>
+                        <button class="quiz-btn" onclick="selectCoffee('fresco')">Dulce y refrescante</button>
+                    </div>
+                </div>
+
+                <div id="quiz-result" class="quiz-result">
+                    <h4 id="result-title" style="color: var(--mint-dark); font-size: 1.4rem; margin-bottom: 0.5rem;"></h4>
+                    <p id="result-desc" style="color: var(--gray);"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & RESERVATIONS -->
+    <section id="contact">
+        <h2 class="section-title">Visítanos o Reserva</h2>
+        <p class="section-subtitle">Nos encantará recibirte en nuestra barra</p>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="info-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h4>Ubicación</h4>
+                        <p>Calle Principal #123, Zona Rosa<br>Ciudad de Especialidad</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <h4>Horarios</h4>
+                        <p>Lunes a Viernes: 7:00 AM - 8:00 PM<br>Sábados y Domingos: 8:00 AM - 9:00 PM</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h4>Contacto & Reservas</h4>
+                        <p>+1 (555) 345-6789<br>hola@okinicafe.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form onsubmit="handleReservation(event)">
+                    <div class="form-group">
+                        <label for="name">Tu Nombre</label>
+                        <input type="text" id="name" required placeholder="Ej. Sofía Gómez">
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Fecha de Visita / Reserva</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="people">Número de Personas</label>
+                        <select id="people">
+                            <option value="1">1 Persona</option>
+                            <option value="2" selected>2 Personas</option>
+                            <option value="4">3 - 4 Personas</option>
+                            <option value="5">Grupo (+5 personas)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Comentarios o Petición Especial</label>
+                        <textarea id="message" rows="3" placeholder="¿Alguna alergia o preferencia de mesa?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar Reserva</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <a href="#" class="logo" style="color: var(--white); justify-content: center; margin-bottom: 1rem;">
+                <i class="fa-solid fa-mug-hot" style="color: var(--mint);"></i>Oki<span>ni</span>
+            </a>
+            <p>Cultivando momentos excepcionales alrededor del buen café.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <p>&copy; 2026 Okini Café de Especialidad. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Menu Tabs Logic
+        function switchTab(evt, tabName) {
+            const containers = document.querySelectorAll('.menu-container');
+            containers.forEach(container => container.classList.remove('active'));
+
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            document.getElementById(tabName).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Coffee Quiz Logic
+        function selectCoffee(type) {
+            const resultBox = document.getElementById('quiz-result');
+            const titleElem = document.getElementById('result-title');
+            const descElem = document.getElementById('result-desc');
+
+            resultBox.style.display = 'block';
+
+            if (type === 'intenso') {
+                titleElem.innerText = "¡Te recomendamos un Cappuccino Okini!";
+                descElem.innerText = "La combinación perfecta de nuestro espresso doble de cuerpo denso y leche cremosa texturizada.";
+            } else if (type === 'suave') {
+                titleElem.innerText = "¡Te recomendamos un método V60 Pour Over!";
+                descElem.innerText = "Una extracción limpia que realza las notas florales y frutales más sutiles de nuestros granos de especialidad.";
+            } else if (type === 'fresco') {
+                titleElem.innerText = "¡Te recomendamos nuestro Latte Menta Sutil!";
+                descElem.innerText = "Una bebida equilibrada y refrescante inspirada en el verde menta, ideal para acompañar con un panqué casero.";
+            }
+        }
+
+        // Reservation Form Feedback
+        function handleReservation(event) {
+            event.preventDefault();
+            alert('¡Gracias por tu solicitud! Hemos registrado tu reserva en Okini con éxito. Te esperamos pronto.');
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
