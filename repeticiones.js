@@ -21,7 +21,7 @@ let totalTazas = 2;
 
 // for (const cantidad of reservasDelDía) {
    // totalTazas = totalTazas + cantidad;
-//}
+// }
 // ejemplo de un for que corre pero no hace lo que queremos
 
 // for (const cantidad of reservasDelDía) {
