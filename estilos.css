@@ -1,12 +1,13 @@
 body {
     background-color: #27ae60;
     font-family: Lucida Sans;
+    font-size: 18;
     color: white;
 }
 h1{
     color: white;
     font-size: 2.5rem;
-    text-align: center
+    text-align: center;
 }
 header {
     padding: 1.5rch 2rem;
@@ -17,11 +18,13 @@ nav a {
 color: #ec0808;
 text-align: center;
 }
+
 main {
     padding: 3rem 2rem;
     max-width: 800px;
     margin: 0 auto;
 }
+
 .metodo-titulo {
     font-size: 1.1rem;
     letter-spacing: 0.05em;
