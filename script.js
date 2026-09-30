@@ -27,7 +27,7 @@ if (puedeReservar(tazasActuales)) {
     contadorTazas.textContent = tazasActuales - 1;
     console.log ("Tazas disponibles hoy", contadorTazas);
 } else {
-    botonReservar.textContent = "Sin ningún cupo disponible.";
+    botonReservar.textContent = "Sin cupos disponibles.";
     botonReservar.disabled = true;
 }
 });
