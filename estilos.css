@@ -118,6 +118,9 @@ footer{
 }
 form{
     color: #001860;
+    background-color: #ff8000;
+    margin-top: 1rem;
+    padding: 1.5rem;
 }
 
 #boton-enviar{
