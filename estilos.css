@@ -1,64 +1,87 @@
 body {
     background-color: #27ae60;
-    font-family: Lucida Sans;
+    font-family: Century Gothic;
     font-size: 18;
     color: white;
 }
 
 h1{
     color: white;
-    font-size: 2.5rem;
+    background-color: #1f3160;
+    font-size: 70px;
     text-align: center;
 }
+h2{
+    background-color: #006400;
+    color: white;
+    text-align: center;
+}
+
 header {
-    padding: 1.5rch 2rem;
-    border-bottom: 1px solid #00a3e6 ;
-    background-color: chocolate;
+    text-align: center;
+    padding: 3.5rch 2rem;
+    border-bottom: 5px solid #1f3160 ;
+    background-color: #652d91;
 }
 nav a {
-color: #ec0808;
+color: white;
+background-color: #0f4d92;
+font-weight: bolder;
 text-align: center;
+font-size: 24;
 }
 
 main {
     padding: 3rem 2rem;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
+    background-color: #0068c8;
+    font-size: 24;
+     font-style: italic;
+     text-align: center;
 }
 
 .metodo-titulo {
     font-size: 1.1rem;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    text-align: center;
     margin-bottom: 0.25rem;
-    color: #1f3160;
+    color: white;
+    background-color: #006400;
 }
+
 .precio {
     font-weight: bold;
-    color: #1f3160;
+    color: white;
+    background-color: #ed0c08;
+    }
+
+footer{
+    text-align: center;
+    color:#006400;
+    background-color: #ffe200;
+    margin: 0 auto;
+    font-weight: bolder;
 }
-
-
-
-
-
-
-
 
 #contador-tazas {
     font-size: 1.5 rem;
-    font-weight: bold;
-    color: #1f3160;
+    font-weight: bolder;
+    color: white;
+    background-color: #ed0c08;
 }
 
-#boton-reservar {
+#boton-reserva {
     display: block;
+    font-weight: bolder;
     margin-top: 1rem;
     padding: 0.5rem 1.25rem;
-    background-color: #ed0c08;
-    color: white;
+    background-color: #ffe200;
+    color: #1f21aa;
     border: none;
     font-family: Century Gothic;
     font-size: 1rem;
     cursor: pointer;
+
 }
