@@ -36,8 +36,9 @@ p{
 }
 header {
     text-align: center;
+    font-weight: bolder;
     padding: 3.5rch 2rem;
-    border-bottom: 5px solid #1f3160 ;
+    border-bottom: 5px solid #ffe200;
     background-color: #652d91;
 }
 
@@ -54,7 +55,7 @@ main {
     max-width: 900px;
     margin: 0 auto;
     background-color: #0068c8;
-    text-transform: lowercase;
+    text-transform: uppercase;
     font-size: 30;
      text-align: center;
 }
