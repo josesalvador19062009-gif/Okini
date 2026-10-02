@@ -4,30 +4,30 @@ function calcularPrecio(precioUnitario, cantidad) {
 }
 
 // function puedeReservar(cantidad) {
-// return cantidad <1;
+// return cantidad <= 2;
 // }
 
 function puedeReservar(tazasDisponibles) {
     return tazasDisponibles > 0;
 }
 
-// const botonReservar = document.querySelector("#boton-reserva");
+// const botonReserva = document.querySelector("#boton-reserva");
 
-// botonReservar.addEventListener("click", function() {
+// botonReserva.addEventListener("click", function() {
 // console.log("El usuario hizo click");
 // });
 
-const botonReservar = document.querySelector("#boton-reserva");
+const botonReserva = document.querySelector("#boton-reserva");
 const contadorTazas = document.querySelector("#contador-tazas");
 
-botonReservar.addEventListener("click", function() {
+botonReserva.addEventListener("click", function() {
     const tazasActuales = Number(contadorTazas.textContent);
 
     if (puedeReservar(tazasActuales)) {
         contadorTazas.textContent = tazasActuales - 1;
         console.log ("Tazas disponibles hoy", contadorTazas);
     } else {
-        botonReservar.textContent = "Se terminaron nuestros cupos.";
-        botonReservar.disabled = true;
+        botonReserva.textContent = "Se terminaron nuestros cupos.";
+        botonReserva.disabled = true;
     }
 });
