@@ -29,5 +29,4 @@ if (puedeReservar(tazasActuales)) {
 } else {
     botonReservar.textContent = "Se terminaron nuestros cupos.";
     botonReservar.disabled = true;
-}
-);
+};
