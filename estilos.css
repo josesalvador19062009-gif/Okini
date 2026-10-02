@@ -116,28 +116,3 @@ footer{
     font-size: 1rem;
     cursor: pointer;
 }
-form{
-    color: #001860;
-    background-color: #ff8000;
-    margin-top: 1rem;
-    padding: 1.5rem;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 16;
-    font-family: Comic Sans MS;
-    border: none;
-    cursor: pointer;
-}
-
-#boton-enviar{
-    display: block;
-    font-weight: bolder;
-    margin-top: 1rem;
-    padding: 0.5rem 1.25rem;
-    background-color: #652d91;
-    color: white;
-    border: none;
-    font-family: Century Gothic;
-    font-size: 1rem;
-    cursor: pointer;
-}
