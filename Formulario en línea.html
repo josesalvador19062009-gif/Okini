@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="Estilos de formulario.css">
+        <link rel="stylesheet"; href="Estilos de reserva.css"
     </head>
     <body>
         <header class="site-header">
@@ -22,7 +23,7 @@
                     </span>
                     <span class="brand-copy">
                         <strong>Okini, tu café de especialidad</strong>
-                        <small>SOLUCIONES TECNOLÓGICAS</small>
+                        <small>Número 1</small>
                     </span>
                 </a>
                 <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
@@ -133,6 +134,8 @@
                                 Enviar solicitud <span>→</span>
                             </button>
                             <div class="form-status" role="status"></div>
+                             <center><p>Estas son las tazas disponibles el día de hoy: <span id="contador-tazas">50</span></p></center>
+ <center><b>Presiona este botón:</b> <button id="boton-reserva">Reserva una taza</button></center></div>
                         </form>
                     </div>
                 </div>
@@ -154,14 +157,14 @@
                 <p>Cafés japoneses y los más conocidos.</p>
                 <div class="footer-links">
                     <a href="index.html#métodos">Métodos</a>
-                    <a href="index.html#reservas">Reservas</a>
                 </div>
                 <small>
                     © <span id="year"></span>
-                    INTEC-GT. Todos los derechos reservados.
+                    Okini. Todos los derechos reservados.
                 </small>
             </div>
         </footer>
+        <script src="script.js"></script>
         <script src="Ajustes de formulario.js"></script>
         <script src="Ajustes de idioma.js"></script>
     </body>
