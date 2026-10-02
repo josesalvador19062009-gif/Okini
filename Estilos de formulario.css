@@ -11,24 +11,24 @@ body {
 
 h1{
     text-align: center;
-    color: #1b1464;
-    background-color: #8ed201;
+    color: white;
+    background-color: #652d91;
 }
 h2{
     font-size: 65;
-    color: black;
+    color: white;
     font-weight: bolder;
-    background-color: #e73c00;
+    background-color: #00a3e6;
 }
 h3{
-    background-color: #1f21aa;
+    background-color: #1f3160;
     color: white;
     text-align: center;
 }
 
 /* Contenedor del formulario */
 .form-container {
-    background-color: whitesmoke;
+    background-color: #ff8000;
     padding: 50px;
     border-radius: 8px;
     box-shadow: 3 4px 15px rgba(23, 121, 4, 0.1);
@@ -79,8 +79,8 @@ h3{
 button {
     width: 100%;
     padding: 12px;
-    background-color: #001860;
-    color: white;
+    background-color: #ffe200;
+    color: #1f21aa;
     font-family: "Century Gothic";
     border: 1px;
     border-radius: 4px;
@@ -91,7 +91,7 @@ button {
 }
 
 button:hover {
-    background-color: #e73c00;
+    background-color: #006400;
 }
 
 /* Mensajes de validación */
