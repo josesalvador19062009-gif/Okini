@@ -11,7 +11,7 @@ function puedeReservar(tazasDisponibles) {
     return tazasDisponibles > 0;
 }
 
-// const botonReservar = document.querySelector("#boton-reservar");
+// const botonReservar = document.querySelector("#boton-reserva");
 
 // botonReservar.addEventListener("click", function() {
 // console.log("El usuario hizo click");
