@@ -1,29 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">   
+<html lang="es">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Formulario de Okini</title>
-        <link rel="stylesheet" href="Estilos de formulario.css">
-    </head>
-    <body>
-        <header>
-        <img src="Barra de Okini.png "; alt="Barra de Okini, tú café de especialidad número 1" ; width="250"; height="90"; class="imagen-ookini">
-        <h1>Formulario de Okini</h1>
-        <nav>
-            <a href="index.html">Volver a la página principal</a>
-        </nav>
-        </header>
-        <h2>Si quieres pedir nuestros cafés te dejamos el siguiente formulario para llenar:</h2>
-        <p>Es por eso que nosotros somos tu café número 1 en especialidad ofreciéndote cafés japoneses y los más básicos que alguna vez hayas probado ¿Quieres tenerlos en casa? ¡Muy bien!</p>
-        <form>
-   <p>Nombre: <input type="text">Inserta tu nombre</p>
-   <p>Correo electrónico: <input type="text">Inserta tu correo electrónico</p>
-   <p>Número de teléfono: <input type="number">Inserta tu número de celular</p>
-   <p>Envía un mensaje: <input type="text">Escribe un mensaje</p>
-    <p>Seleccionar un método de reserva:</p>
-    <button id="boton-enviar">Enviar mensaje</button>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="Estilos formulario.css">
+</head>
+<body> 
+<p><h1><b>Menú:</b><p>
+    - <a href="Mi página empresarial 1.html">Regresar al inicio</a></p>
+    - <a href="Formulario.html">Regresar al contacto</a></br></p></h1>
+    <div class="form-container">
+       <center><img src="Negocios.avif"; width="193"; height="100"; border="1"></p></center>
+       <h2><center>Negocios</p></center></h3>
+        <h3>Contactos </h2><center><img src="Contactos.png"; width="103"; height="93"></p></center>
+        <center><a href="Mi página empresarial 1.html"><img src="SOLADEMP.webp"; width="165"; height="60"; border="1"></a></center>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Nombre completo:</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre...">
+                <span class="error-message" id="nameError">El nombre es obligatorio.</span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+                <span class="error-message" id="emailError">Por favor, introduce un correo válido.</span>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                <span class="error-message" id="messageError">El mensaje no lo puedes dejar vacío.</span>
+            </div><p>
+    <label><b>¿Qué café quieres?:</b><p><select name="servicio"><option>Normal</option><option>Con leche</option><option>V60</option><option>Kyoto Drip</option><option>Prensa Francesa</option><option>Siphon japonés</option><option>Con cremora</option><option>Capuchinno</option></select></label></p>
+            <button type="submit">Enviar Mensaje</button>
+            <div class="success-message" id="successMessage">¡Formulario enviado con éxito!</div>
         </form>
-        <sript src="Funciones del formulario.js"></sript>
-        </body>
-        </html>
+    </div>
+
+    <!-- Vinculación del archivo JavaScript -->
+    <script src="Función del formulario.js"></script>
+</body>
+</html>

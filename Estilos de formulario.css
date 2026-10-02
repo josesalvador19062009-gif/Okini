@@ -1,38 +1,111 @@
-body{
-    background-color: #00ff99;
-    color: black;
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 30;
+/* Estilos generales y fondo */
+body {
+    font-family: "Century Gothic";
+    background-color: #0ff999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 1;
 }
-header{
-    color: #652d91;
-    font-size: 35;
-}
+
 h1{
-   font-weight: bolder;
-   color: #001860
-}
-
-form{
-    color: #001860;
-    background-color: #ff8000;
-    margin-top: 1rem;
-    padding: 1.5rem;
     text-align: center;
+    color: #1b1464;
+    background-color: #8ed201;
+}
+h2{
+    font-size: 65;
+    color: black;
     font-weight: bolder;
-    font-size: 16;
-    border: none;
-    cursor: pointer;
+    background-color: #e73c00;
+}
+h3{
+    background-color: #1f21aa;
+    color: white;
+    text-align: center;
 }
 
-#boton-enviar{
+/* Contenedor del formulario */
+.form-container {
+    background-color: whitesmoke;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 3 4px 15px rgba(23, 121, 4, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+}
+
+/* Grupos de campos */
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group label {
     display: block;
-    font-weight: bolder;
-    margin-top: 1rem;
-    padding: 0.5rem 1.25rem;
-    background-color: #652d91;
+    margin-bottom: 8px;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Inputs y Textarea */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e73c00;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Efecto de foco al escribir */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: black;
+    outline: none;
+}
+
+/* Botón de envío */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #001860;
     color: white;
-    border: none;
-    font-size: 1rem;
+    font-family: "Century Gothic";
+    border: 1px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bolder;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e73c00;
+}
+
+/* Mensajes de validación */
+.error-message {
+    color: #fd0001;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+.success-message {
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bolder;
+    display: none;
 }
