@@ -1,7 +1,8 @@
 /* Estilos generales y fondo */
 body {
     font-family: "Century Gothic";
-    background-color: #0ff999;
+    background-color: white;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,9 +16,8 @@ h1{
     background-color: #652d91;
 }
 nav{
-    color: white;
+    color: black;
     font-size: 16;
-    background-color: #ffe200;
 }
 h2{
     font-size: 65;
@@ -33,13 +33,12 @@ h3{
 h4{
     font-size: 50;
     text-align: center;
-    color: #0ff999;
-    background-color: #006400;
+    color: black
 }
 
 /* Contenedor del formulario */
 .form-container {
-    background-color: #ff8000;
+    background-color: whitesmoke;
     padding: 50px;
     border-radius: 8px;
     box-shadow: 3 4px 15px rgba(23, 121, 4, 0.1);
@@ -91,8 +90,8 @@ h4{
 button {
     width: 100%;
     padding: 12px;
-    background-color: #ffe200;
-    color: #1f21aa;
+    background-color: #1f21aa;
+    color: white;
     font-family: "Century Gothic";
     border: 1px;
     border-radius: 4px;
@@ -103,7 +102,7 @@ button {
 }
 
 button:hover {
-    background-color: #006400;
+    background-color: #1f21aa;
 }
 
 /* Mensajes de validación */
