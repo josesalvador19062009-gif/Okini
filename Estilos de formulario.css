@@ -14,9 +14,11 @@ h1{
     text-align: center;
     color: black;
 }
-nav{
+br{
     color: black;
     font-size: 16;
+    padding: 1.5rem;
+    background: whitesmoke;
 }
 h2{
     font-size: 65;
