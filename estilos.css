@@ -6,14 +6,12 @@ body {
 }
 
 h1{
-    color: white;
-    background-color: #1f3160;
+font-weight: bolder;
     font-size: 70px;
     text-align: center;
 }
 h2{
-    background-color: #006400;
-    color: white;
+    color: black;
     font-weight: bolder;
     text-align: center;
 }
@@ -27,8 +25,7 @@ h5{
     font-size: 30;
    font-weight: bold;
    font-style: italic;
-   background-color: #001860;
-   color: white;
+   color: black;
    text-align: center;
 }
 p{
@@ -40,13 +37,11 @@ header {
     text-align: center;
     font-weight: bolder;
     padding: 3.5rch 2rem;
-    border-bottom: 5px solid #ffe200;
-    background-color: #652d91;
+    border-bottom: 5px solid black;
+    background-color: whitesmoke;
 }
 
 nav a {
-color: white;
-background-color: #0f4d92;
 font-weight: bolder;
 text-align: center;
 font-size: 24;
@@ -56,7 +51,6 @@ main {
     padding: 3rem 2rem;
     max-width: 900px;
     margin: 0 auto;
-    background-color: #0068c8;
     text-transform: uppercase;
     font-size: 30;
      text-align: center;
@@ -64,8 +58,6 @@ main {
 
 br{
     font-size: 30;
-    background-color: #001860;
-    color: #ff8000;
     font-weight: bolder;
 }
 
@@ -77,21 +69,20 @@ br{
     text-align: center;
     margin-bottom: 0.25rem;
     color: white;
-    background-color: #006400;
+    background-color: #1f21aa;
 }
 
 .precio {
     font-size: 30;
     font-weight: bold;
-    color: white;
-    background-color: #ed0c08;
+    color: black;
     }
 
 footer{
     font-family: Kristen ITC;
     text-align: center;
-    color:#1f21aa;
-    background-color: #ffe200;
+    color:black;
+    background-color: whitesmoke;
     margin: 1 auto;
     font-weight: bolder;
     font-size: 30;
@@ -100,8 +91,7 @@ footer{
 #contador-tazas {
     font-size: 1.5 rem;
     font-weight: bolder;
-    color: white;
-    background-color: #ed0c08;
+    color: black;
     text-align: center;
 }
 
@@ -110,7 +100,7 @@ footer{
     font-weight: bolder;
     margin-top: 1rem;
     padding: 0.5rem 1.25rem;
-    background-color: #ffe200;
+    background-color: white;
     color: #1f21aa;
     border: none;
     font-family: Century Gothic;
