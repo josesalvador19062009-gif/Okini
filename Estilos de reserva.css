@@ -1,0 +1,19 @@
+#contador-tazas {
+    font-size: 1.5 rem;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+}
+
+#boton-reserva {
+    display: block;
+    font-weight: bolder;
+    margin-top: 1rem;
+    padding: 0.5rem 1.25rem;
+    background-color: #1f21aa;
+    color: white;
+    border: none;
+    font-family: Century Gothic;
+    font-size: 1rem;
+    cursor: pointer;
+}
