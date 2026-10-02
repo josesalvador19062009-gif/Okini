@@ -1,41 +1,168 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Formulario de Contacto</title>
-    <link rel="stylesheet" href="Estilos de formulario.css">
-</head>
-<body> 
-    <br><h1>Cuéntanos que café quieres pedirnos y te lo enviamos a domicilio</h1></br><br>Este formulario nos ayuda a entender rápidamente tu petición de café. No necesitas pensarlo: podemos llevártelo a la puerta de tu casa.</br>
-    <div class="form-container">
-       <h2>Okini</h2><center><p><img src="Barra de Okini.png"; width="250"; height="90"></p></center>
-      <p>Hablemos de tu pedido. Completa los datos y deja el mayor contexto posible.</p>
-        <h3>Contactos </h3><center><p><img src="Contactos.png"; width="153"; height="93"></p></center>
-       <br><form id="contactForm">
-            <div class="form-group">
-                <label for="name">Nombre completo:</label>
-                <input type="text" id="name" name="name" placeholder="Tu nombre completo...">
-                <span class="error-message" id="nameError">El nombre es obligatorio.</span>
+<html lang="es" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Cotiza un proyecto de software con INTEC-GT.">
+        <meta name="theme-color" content="#ffffff">
+        <title>Pedir a domicilio | Okini</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/styles.css?v=20260824-2">
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container nav-wrap">
+                <a class="brand" href="index.html">
+                    <span class="brand-mark">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <span class="brand-copy">
+                        <strong>Okini, tu café de especialidad</strong>
+                        <small>SOLUCIONES TECNOLÓGICAS</small>
+                    </span>
+                </a>
+                <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="main-nav">
+                    <a href="index.html" target="_blank">Volver al sitio principal</a>
+                    <a href="index.html#reservas" target="_blank">Reservas de tazas disponibles</a>
+                    <a href="index.html#productos" target="_blank">Métodos</a>
+                    <a href="index.html#nosotros" target="_blank">Sobre Nosotros</a>
+                    <a class="active" href="Formulario en línea.html">Contacto</a>
+                </nav>
+                <div class="nav-actions">
+                    <button class="theme-toggle" type="button" aria-label="Cambiar modo">
+                        <span class="sun">☀</span>
+                        <span class="toggle-track">
+                            <span class="toggle-thumb"></span>
+                        </span>
+                        <span class="moon">☾</span>
+                    </button>
+                    <button class="lang-toggle" type="button" aria-label="Cambiar idioma" title="Cambiar idioma">
+                        <span class="lang-current">ES</span>
+                        <span class="lang-divider">/</span>
+                        <span class="lang-other">EN</span>
+                    </button>
+                </div>
             </div>
-
-            <div class="form-group">
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
-                <span class="error-message" id="emailError">Por favor, introduce un correo válido.</span>
+        </header>
+        <main class="inner-main">
+            <section class="quote-page">
+                <div class="container quote-layout">
+                    <div class="quote-copy reveal">
+                        <div class="eyebrow">
+                            <span class="pulse-dot"></span>
+                            Haz tú pedido:
+                        </div>
+                        <h1>
+                            Cuéntanos qué café necesitas y <span>te lo llevaremos</span>
+                        </h1>
+                        <p>Este formulario nos ayuda a entender rápidamente tu pedido. No necesitas pensarlo: podemos llevartelo sin problemas.</p>
+                        <div class="quote-points">
+                            <div>
+                                <div class="mini-icon">01</div>
+                                <div>
+                                    <b>Cuéntanos sobre tu pedido</b>
+                                    <span>¿Para que lo quieres?</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="mini-icon">02</div>
+                                <div>
+                                    <b>Dános más detalles sobre el lugar en que estás</b>
+                                    <span>Identificamos el lugar.</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="mini-icon">03</div>
+                                <div>
+                                    <b>Te contactamos</b>
+                                    <span>Coordinamos una conversación para aterrizar el pedido.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quote-card reveal">
+                        <h2>Hablemos de tu pedido</h2>
+                        <p>Completa los datos y deja el mayor contexto posible.</p>
+                        <form data-quote-form>
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="nombre">Nombre completo</label>
+                                    <input id="nombre" name="nombre" autocomplete="name" required placeholder="Tu nombre">
+                                </div>
+                                <div class="field">
+                                    <label for="empresa">Empresa o lugar</label>
+                                    <input id="empresa" name="empresa" autocomplete="organization" placeholder="Nombre de tu empresa o colegio">
+                                </div>
+                                <div class="field">
+                                    <label for="correo">Correo electrónico</label>
+                                    <input id="correo" name="correo" type="email" autocomplete="email" required placeholder="nombre@empresa.com">
+                                </div>
+                                <div class="field">
+                                    <label for="telefono">Teléfono / WhatsApp</label>
+                                    <input id="telefono" name="telefono" autocomplete="tel" placeholder="+502 ...">
+                                </div>
+                                <div class="field full">
+                                    <label for="tipo">¿Qué necesitas?</label>
+                                    <select id="tipo" name="tipo" required>
+                                        <option value="">Selecciona una opción</option>
+                                        <option value="cafe">Café clásico</option>
+                                        <option value="leche">Café con leche</option>
+                                        <option value="capuchinno">Capuchinno</option>
+                                        <option value="v60">V60</option>
+                                        <option value="prensa">Prensa Francesa</option>
+                                        <option value="kyotodrip">Kyoto Drip</option>
+                                        <option value="cremora">Café con cremora</option>
+                                        <option value="siphon">Siphon japonés</option>
+                                    </select>
+                                </div>
+                                <div class="field full">
+                                    <label for="mensaje">Cuéntanos sobre el pedido</label>
+                                    <textarea id="mensaje" name="mensaje" required placeholder="Describe la necesidad, que nos ayude a entenderla."></textarea>
+                                    <span class="form-help">No necesitas pensarlo.</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary form-submit" type="submit">
+                                Enviar solicitud <span>→</span>
+                            </button>
+                            <div class="form-status" role="status"></div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <div class="brand footer-brand">
+                    <span class="brand-mark">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <span class="brand-copy">
+                        <strong>Okini</strong>
+                        <small>Tú cafe de especialidad número 1</small>
+                    </span>
+                </div>
+                <p>Cafés japoneses y los más conocidos.</p>
+                <div class="footer-links">
+                    <a href="index.html#métodos">Métodos</a>
+                    <a href="index.html#reservas">Reservas</a>
+                </div>
+                <small>
+                    © <span id="year"></span>
+                    INTEC-GT. Todos los derechos reservados.
+                </small>
             </div>
-            <div class="form-group">
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
-                <span class="error-message" id="messageError">El mensaje no lo puedes dejar vacío.</span>
-            </div><p>
-    <label><b>¿Qué tipo de café quieres?:</b><p><select name="servicio"><option>Normal</option><option>Con leche</option><option>V60</option><option>Kyoto Drip</option><option>Prensa Francesa</option><option>Siphon japonés</option><option>Con cremora</option><option>Capuchinno</option></select></label></p>
-            <button type="submit">Enviar Mensaje</button>
-            <div class="success-message" id="successMessage">¡Formulario enviado con éxito!</div>
-        </form>
-    </div></br>
-<h4>© 2026. Okini</h4>
-    <!-- Vinculación del archivo JavaScript -->
-    <script src="Funciones del formulario.js"></script>
-</body>
+        </footer>
+        <script src="assets/js/i18n.js?v=20260824-2"></script>
+        <script src="assets/js/main.js?v=20260824-2"></script>
+    </body>
 </html>
