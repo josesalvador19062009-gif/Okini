@@ -12,8 +12,7 @@ body {
 
 h1{
     text-align: center;
-    color: white;
-    background-color: #652d91;
+    color: black;
 }
 nav{
     color: black;
@@ -21,13 +20,12 @@ nav{
 }
 h2{
     font-size: 65;
-    color: white;
+    color: black;
     font-weight: bolder;
-    background-color: #00a3e6;
 }
+
 h3{
-    background-color: #1f3160;
-    color: white;
+    color: black;
     text-align: center;
 }
 h4{

@@ -19,7 +19,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     // 1. Validar campo Nombre
     if (nameInput.value.trim() === "") {
         nameError.style.display = "block";
-        nameInput.style.borderColor = "#E73C00";
+        nameInput.style.borderColor = "#000000";
         isValid = false;
     } else {
         nameError.style.display = "none";
