@@ -4,7 +4,7 @@ function calcularPrecio(precioUnitario, cantidad) {
 }
 
 // function puedeReservar(cantidad) {
-// return cantidad <= 2;
+// return cantidad <1;
 // }
 
 function puedeReservar(tazasDisponibles) {
@@ -17,7 +17,7 @@ function puedeReservar(tazasDisponibles) {
 // console.log("El usuario hizo click");
 // });
 
-const botonReservar = document.querySelector("#boton-reservar");
+const botonReservar = document.querySelector("#boton-reserva");
 const contadorTazas = document.querySelector("#contador-tazas");
 
 botonReservar.addEventListener("click", function() {
