@@ -1149,7 +1149,7 @@ html[data-theme="dark"] .toggle-thumb {
 .footer-grid {
     display: grid;
     grid-template-columns: auto 1fr auto auto;
-    gap: 30px;
+    gap: 50px;
     align-items: center
 }
 
@@ -1978,8 +1978,8 @@ html[data-theme="dark"] .toggle-thumb {
 
 .form-status {
     display: none;
-    margin-top: 16px;
-    padding: 13px;
+    margin-top: 56px;
+    padding: 43px;
     border-radius: 9px;
     background: color-mix(in srgb,var(--success) 10%,var(--surface));
     color: var(--success);
