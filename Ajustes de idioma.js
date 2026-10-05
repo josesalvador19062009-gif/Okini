@@ -89,5 +89,5 @@
     setLanguage(initial);
     document.querySelectorAll('.lang-toggle').forEach(button => button.addEventListener('click', () => setLanguage(document.documentElement.lang === 'es' ? 'en' : 'es')));
 }
-);
+)();
 
