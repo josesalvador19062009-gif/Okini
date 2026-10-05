@@ -8,16 +8,44 @@
         <link rel="stylesheet"; href="Estilos de formulario.css">
     </head>
     <body>
-        <header>
-            <img src="Barra de Okini.png " ; alt="Barra de Okini, tú café de especialidad número 1" ; width="250" ; height="90" ; class="imagen-ookini">
-            <h1>Okini</h1>
-            <h3>Somos tu Café de especialidad número 1 en atención todos los 365 días del año.</h3>
-            <nav>
-                <h3>Menú principal:</h3>
-                <a href="#nosotros">Sobre Nosotros</a>
-                <a href="#métodos">Métodos de café disponibles</a>
-                <a href="#contacto">Contáctanos</a>
-            </nav>
+        <header class="site-header">
+            <div class="container nav-wrap">
+                <a class="brand" href="index.html">
+                    <span class="brand-mark">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <span class="brand-copy">
+                        <strong>Okini, tu café de especialidad</strong>
+                        <small>Número 1</small>
+                    </span>
+                </a>
+                <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="main-nav">
+                    <a href="index.html">Volver al sitio principal</a>
+                    <a href="index.html#métodos" target="_blank">Métodos</a>
+                    <a href="index.html#nosotros" target="_blank">Sobre Nosotros</a>
+                    <a class="active" href="Formulario en línea.html" target="_blank">Contacto</a>
+                </nav>
+                <div class="nav-actions">
+                    <button class="theme-toggle" type="button" aria-label="Cambiar modo">
+                        <span class="sun">☀</span>
+                        <span class="toggle-track">
+                            <span class="toggle-thumb"></span>
+                        </span>
+                        <span class="moon">☾</span>
+                    </button>
+                    <button class="lang-toggle" type="button" aria-label="Cambiar idioma" title="Cambiar idioma">
+                        <span class="lang-current">ES</span>
+                        <span class="lang-divider">/</span>
+                        <span class="lang-other">EN</span>
+                    </button>
+                </div>
+            </div>
         </header>
         <main>
             <section id="Nosotros">
