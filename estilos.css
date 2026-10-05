@@ -51,6 +51,8 @@ main {
     padding: 3rem 2rem;
     max-width: 900px;
     margin: 0 auto;
+    color: white;
+    background-color: #001860;
     text-transform: uppercase;
     font-size: 30;
      text-align: center;
@@ -78,6 +80,7 @@ br{
 footer{
     font-family: Kristen ITC;
     text-align: center;
+    color: black;
     background-color: whitesmoke;
     margin: 1 auto;
     font-weight: bolder;
