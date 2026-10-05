@@ -2,15 +2,16 @@
     const translations = {
         'Inicio': 'Home',
         'Cafés': 'Coffees',
-        'Métodos': 'Meythods',
+        'Métodos': 'Methods',
         'Nosotros': 'About us',
         'Contacto': 'Contact',
         'Hablemos de tu pedido': 'Tell us about your order',
         'Solicitar pedido': 'Request order',
         'Cambiar modo': 'Change theme',
         'Cambiar idioma': 'Change language',
-        'Tu Café no.1': 'Your coffee no.1',
-        'Móvil': 'Mobile',
+        'Okini, tu café de especialidad': 'Okini, your speciality coffee',
+        'Número 1': 'Number 1',
+        'Volver al sitio principal': 'Return to the main site',
         'Pedidos': 'Orders',
         'Contáctanos': 'Contact us',
         'Café clásico': 'Classic coffee',
@@ -22,12 +23,14 @@
         'Café con cremora': 'Coffee with creamer',
         'Siphon Japonés': 'Japanese siphon',
         'Todos los derechos reservados.': 'All rights reserved.',
+        'Cuéntanos qué café necesitas y te lo llevaremos': 'Tell us what kind of coffee you need and well bring it to you.',
         'Este formulario nos ayuda a entender rápidamente tu pedido. No necesitas pensarlo: podemos llevartelo sin problemas..': 'This form helps us quickly understand your order. No need to think about it: we can deliver it to you without any problems.',
         'Qué quieres.': 'What you want.',
-        'Revisamos el alcance': 'We review the scope',
-        'Identificamos una ruta técnica y funcional.': 'We identify a technical and functional path.',
+        'Cuéntanos sobre tu pedido': 'Tell us about your order',
+        '¿Para que lo quieres?': 'What do you want it for?'
+        'Dános más detalles sobre el lugar en que estás.': 'Give us more details about where you are.',
         'Te contactamos': 'We contact you',
-        'Coordinamos una conversación para aterrizar el pedido.': 'We schedule a conversation to shape the order.',
+        'Coordinamos una conversación para aterrizar el pedido.': 'We coordinated a conversation to finalize the order.',
         'Información del pedido': 'Order information',
         'Completa los datos y nos pondremos en contacto contigo.': 'Complete the details and we will contact you.',
         'Nombre': 'Name',
@@ -86,5 +89,5 @@
     setLanguage(initial);
     document.querySelectorAll('.lang-toggle').forEach(button => button.addEventListener('click', () => setLanguage(document.documentElement.lang === 'es' ? 'en' : 'es')));
 }
-)();
+);
 
