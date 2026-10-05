@@ -17,8 +17,9 @@ h2{
 }
 h4{
     font-size: 30;
-    font-weight: bold;
-    background-color: black;
+    font-weight: bolder;
+    color: black;
+    background-color: #118cff;;
     padding: 3.5rch 2rem;
 }
 h5{
