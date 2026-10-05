@@ -29,7 +29,7 @@ html[data-theme="dark"] {
     --card-border: #17314b;
     --success: #1dd69a;
 }
-html[data-theme="clear"] {
+html[data-theme="light"] {
     --bg: #04101e;
     --bg-soft: #061526;
     --surface: #081a2c;
