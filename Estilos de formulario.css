@@ -1,9 +1,9 @@
 :root {
-    --bg: #ffffff;
+    --bg: #000000;
     --bg-soft: #f6f9fd;
     --surface: #ffffff;
     --surface-2: #f7faff;
-    --text: #071326;
+    --text: black;
     --muted: #667085;
     --line: #e3e9f2;
     --primary: #0878f9;
@@ -496,8 +496,8 @@ html[data-theme="dark"] .toggle-thumb {
 .chart-grid {
     display: grid;
     grid-template-columns: 1.7fr .75fr;
-    gap: 8px;
-    margin-top: 8px
+    gap: 12px;
+    margin-top: 12px;
 }
 
 .chart-card,.donut-card {
@@ -529,7 +529,7 @@ html[data-theme="dark"] .toggle-thumb {
 .donut-card {
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
 }
 
 .donut {
@@ -555,7 +555,7 @@ html[data-theme="dark"] .toggle-thumb {
     padding: 0;
     display: flex;
     gap: 8px;
-    list-style: none
+    list-style: none;
 }
 
 .activity {
@@ -600,12 +600,12 @@ html[data-theme="dark"] .toggle-thumb {
 .phone-notch {
     position: absolute;
     top: 7px;
-    left: 50%;
+    left: 70%;
     transform: translateX(-50%);
     width: 55px;
     height: 12px;
     background: color-mix(in srgb,var(--text) 88%,#101723);
-    border-radius: 10px
+    border-radius: 10px;
 }
 
 .phone-card>small {
@@ -666,7 +666,7 @@ html[data-theme="dark"] .toggle-thumb {
     display: flex;
     align-items: flex-end;
     gap: 5px;
-    padding: 10px 3px
+    padding: 10px 3px;
 }
 
 .phone-bars i {
@@ -1101,7 +1101,7 @@ html[data-theme="dark"] .toggle-thumb {
 .purpose-card p {
     font-size: 12px;
     color: var(--muted);
-    margin-top: 30px;
+    margin-top: 30px
 }
 
 .purpose-checks {
@@ -1114,7 +1114,7 @@ html[data-theme="dark"] .toggle-thumb {
 
 .contact {
     padding: 55px 0 90px;
-    background: var(--bg);
+    background: var(--bg)
 }
 
 .contact-wrap {
@@ -1129,8 +1129,7 @@ html[data-theme="dark"] .toggle-thumb {
 }
 
 .contact h2 {
-    font-size: 31px;
-    color: black;
+    font-size: 31px
 }
 
 .contact p {
@@ -1143,13 +1142,13 @@ html[data-theme="dark"] .toggle-thumb {
 .site-footer {
     border-top: 1px solid var(--line);
     background: var(--bg);
-    padding: 45px 0
+    padding: 35px 0
 }
 
 .footer-grid {
     display: grid;
     grid-template-columns: auto 1fr auto auto;
-    gap: 50px;
+    gap: 30px;
     align-items: center
 }
 
@@ -1978,8 +1977,8 @@ html[data-theme="dark"] .toggle-thumb {
 
 .form-status {
     display: none;
-    margin-top: 56px;
-    padding: 43px;
+    margin-top: 16px;
+    padding: 13px;
     border-radius: 9px;
     background: color-mix(in srgb,var(--success) 10%,var(--surface));
     color: var(--success);
@@ -2994,3 +2993,4 @@ html[data-theme="dark"] .toggle-thumb {
         font-size: 72px
     }
 }
+
