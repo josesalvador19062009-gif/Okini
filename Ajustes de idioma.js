@@ -27,7 +27,7 @@
         'Revisamos el alcance': 'We review the scope',
         'Identificamos una ruta técnica y funcional.': 'We identify a technical and functional path.',
         'Te contactamos': 'We contact you',
-        'Coordinamos una conversación para aterrizar el pedido.': 'We schedule a conversation to shape the delivery.',
+        'Coordinamos una conversación para aterrizar el pedido.': 'We schedule a conversation to shape the order.',
         'Información del pedido': 'Order information',
         'Completa los datos y nos pondremos en contacto contigo.': 'Complete the details and we will contact you.',
         'Nombre': 'Name',
