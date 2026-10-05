@@ -29,7 +29,21 @@ html[data-theme="dark"] {
     --card-border: #17314b;
     --success: #1dd69a;
 }
-
+html[data-theme="clear"] {
+    --bg: #04101e;
+    --bg-soft: #061526;
+    --surface: #081a2c;
+    --surface-2: #0a2035;
+    --text: black;
+    --muted: #9aabc1;
+    --line: #193149;
+    --primary: #118cff;
+    --primary-2: #00c7ff;
+    --shadow: 0 25px 80px rgba(0,0,0,.35);
+    --header: rgba(4,16,30,.82);
+    --card-border: #17314b;
+    --success: #1dd69a;
+}
 * {
     box-sizing: border-box;
 }
