@@ -9,7 +9,7 @@
         'Solicitar pedido': 'Request order',
         'Cambiar modo': 'Change theme',
         'Cambiar idioma': 'Change language',
-        'Tu Caafé no.1': 'Your coffee no.1',
+        'Tu Café no.1': 'Your coffee no.1',
         'Móvil': 'Mobile',
         'Pedidos': 'Orders',
         'Contáctanos': 'Contact us',
