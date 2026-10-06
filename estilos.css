@@ -54,10 +54,12 @@ main {
      text-align: center;
 }
 #micapa{
-    top: 100px;
+    top: 70px;
     left: 20px;
+    padding: 2rcap;
     position: absolute;
     font-size: 20px;
+    margin: 5 auto;
     background-color: whitesmoke;
     color: black;
 text-align: center;
