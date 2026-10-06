@@ -15,33 +15,46 @@
     --success: #05a86b;
 }
 
-[data-theme="dark"] {
-    --bg-color: #04101e;
-    --text-color: white;
-    --track-bg: #444444;
-    --muted:#9aabc1;
-    --shadow: 0 22px 72px rgba(20, 51, 87, .12);
-    --thumb-bg: #222222;
+html[data-theme="dark"] {
+    --bg: #04101e;
+    --bg-soft: #061526;
+    --surface: #081a2c;
+    --surface-2: #0a2035;
+    --text: #f6f9ff;
+    --muted: #9aabc1;
+    --line: #193149;
+    --primary: #118cff;
+    --primary-2: #00c7ff;
+    --shadow: 0 25px 80px rgba(0,0,0,.35);
+    --header: rgba(4,16,30,.82);
+    --card-border: #17314b;
+    --success: #1dd69a;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 123px
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 3 auto;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 5 auto;
+    font-family: Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+    transition: background .35s ease,color .35s ease
 }
 
 /* Diseño del Track */
 .theme-switch {
     display: inline-block;
-    height: 34px;
+    height: 64px;
     position: relative;
-    width: 60px;
+    width: 70px;
 }
 
 .theme-switch input {
