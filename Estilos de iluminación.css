@@ -1,14 +1,14 @@
 /* Variables de color */
 :root {
     --bg-color: #ffffff;
-    --text-color: #333333;
+    --text-color: black;
     --track-bg: #ccc;
     --thumb-bg: #ffffff;
 }
 
 [data-theme="dark"] {
     --bg-color: #1a1a1a;
-    --text-color: #f0f0f0;
+    --text-color: white;
     --track-bg: #444444;
     --thumb-bg: #222222;
 }
