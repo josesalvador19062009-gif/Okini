@@ -71,6 +71,7 @@ button {
 .site-header {
     position: fixed;
     inset: 0 0 auto;
+    size: 0vmax;
     z-index: 1000;
     background: var(--header);
     backdrop-filter: blur(18px);
@@ -1101,7 +1102,7 @@ html[data-theme="dark"] .toggle-thumb {
 .purpose-card p {
     font-size: 12px;
     color: var(--muted);
-    margin-top: 30px
+    margin-top: 30px;
 }
 
 .purpose-checks {
@@ -1114,7 +1115,7 @@ html[data-theme="dark"] .toggle-thumb {
 
 .contact {
     padding: 55px 0 90px;
-    background: var(--bg)
+    background: var(--bg);
 }
 
 .contact-wrap {
@@ -1129,7 +1130,8 @@ html[data-theme="dark"] .toggle-thumb {
 }
 
 .contact h2 {
-    font-size: 31px
+    font-size: 31px;
+    color: black;
 }
 
 .contact p {
@@ -1142,13 +1144,13 @@ html[data-theme="dark"] .toggle-thumb {
 .site-footer {
     border-top: 1px solid var(--line);
     background: var(--bg);
-    padding: 50px 0
+    padding: 45px 0
 }
 
 .footer-grid {
     display: grid;
     grid-template-columns: auto 1fr auto auto;
-    gap: 30px;
+    gap: 50px;
     align-items: center
 }
 
@@ -1977,8 +1979,8 @@ html[data-theme="dark"] .toggle-thumb {
 
 .form-status {
     display: none;
-    margin-top: 16px;
-    padding: 13px;
+    margin-top: 56px;
+    padding: 43px;
     border-radius: 9px;
     background: color-mix(in srgb,var(--success) 10%,var(--surface));
     color: var(--success);
