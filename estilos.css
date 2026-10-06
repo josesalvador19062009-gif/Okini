@@ -58,6 +58,7 @@ main {
     left: 20px;
     position: absolute;
     font-size: 20px;
+    background-color: whitesmoke;
     color: black;
 text-align: center;
 }
