@@ -11,22 +11,14 @@ h1{
     text-align: center;
 }
 h2{
-    color: white;
-    font-weight: bolder;
-    text-align: center;
-    
-}
-h3{
     color: black;
     font-weight: bolder;
     text-align: center;
-    font-size: 45;
 }
 h4{
     font-size: 30;
-    font-weight: bolder;
-    color: black;
-    background-color: #118cff;
+    font-weight: bold;
+    background-color: black;
     padding: 3.5rch 2rem;
 }
 h5{
@@ -45,11 +37,10 @@ header {
     font-weight: bolder;
     padding: 3.5rch 2rem;
     border-bottom: 5px solid #00a3e6;
-    background-color: #cfcfcf;
+    background-color: whitesmoke;
 }
 
 nav a {
-color: #001860;
 font-weight: bolder;
 text-align: center;
 font-size: 24;
@@ -59,8 +50,6 @@ main {
     padding: 3rem 2rem;
     max-width: 900px;
     margin: 0 auto;
-    color: white;
-    background-color: #001860;
     text-transform: uppercase;
     font-size: 30;
      text-align: center;
@@ -88,9 +77,29 @@ br{
 footer{
     font-family: Kristen ITC;
     text-align: center;
-    color: black;
     background-color: whitesmoke;
-    margin: 5 auto;
+    margin: 1 auto;
     font-weight: bolder;
     font-size: 30;
 }
+
+#contador-tazas {
+    font-size: 1.5 rem;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+}
+
+#boton-reserva {
+    display: block;
+    font-weight: bolder;
+    margin-top: 1rem;
+    padding: 0.5rem 1.25rem;
+    background-color: #00a3e6;
+    color: black;
+    border: none;
+    font-family: Century Gothic;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
