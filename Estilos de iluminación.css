@@ -20,6 +20,7 @@
     --text-color: white;
     --track-bg: #444444;
     --muted:#9aabc1;
+    --shadow: 0 22px 72px rgba(20, 51, 87, .12);
     --thumb-bg: #222222;
 }
 
@@ -31,7 +32,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    margin: 3 auto;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
