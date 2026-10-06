@@ -37,6 +37,16 @@ body {
     display: none;
 }
 
+footer{
+    font-family: Kristen ITC;
+    text-align: center;
+    background-color: whitesmoke;
+    color: black;
+    margin: 1 auto;
+    font-weight: bolder;
+    font-size: 30;
+}
+
 .slider {
     background-color: var(--track-bg);
     bottom: 0;
