@@ -53,6 +53,14 @@ main {
     font-size: 30;
      text-align: center;
 }
+#micapa{
+    top: 100px;
+    left: 20px;
+    position: absolute;
+    font-size: 20px;
+    color: black;
+text-align: center;
+}
 
 br{
     font-size: 30;
