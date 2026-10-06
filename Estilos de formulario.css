@@ -775,6 +775,7 @@ html[data-theme="dark"] .toggle-thumb {
     border-radius: 12px;
     padding: 26px;
     display: flex;
+    color: black;
     flex-direction: column;
     transition: .25s
 }
@@ -799,6 +800,7 @@ html[data-theme="dark"] .toggle-thumb {
 
 .service-card h3 {
     font-size: 17px;
+    color: black;
     margin: 0 0 12px
 }
 
