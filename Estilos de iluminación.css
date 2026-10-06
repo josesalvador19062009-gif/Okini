@@ -1,0 +1,79 @@
+/* Variables de color */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --track-bg: #ccc;
+    --thumb-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #f0f0f0;
+    --track-bg: #444444;
+    --thumb-bg: #222222;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Diseño del Track */
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: var(--track-bg);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+    border-radius: 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6px;
+}
+
+/* Círculo deslizante (Thumb) */
+.slider:before {
+    background-color: var(--thumb-bg);
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    width: 26px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+/* Movimiento del círculo al activar */
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Iconos dentro del track */
+.icon {
+    font-size: 14px;
+    z-index: 1;
+}

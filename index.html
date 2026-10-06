@@ -6,6 +6,7 @@
         <title>Okini - Somos, tu café de especialidad número 1 atendiéndote los 365 días del año.</title>
            <link rel="stylesheet"; href="estilos.css">
         <link rel="stylesheet"; href="Estilos de formulario.css">
+           <link rel="stylesheet"; href="Estilos de iluminación.css">
     </head>
     <body>
         <header class="site-header">
@@ -32,13 +33,13 @@
                     <a class="active" href="Formulario en línea.html" target="_blank">Contacto</a>
                 </nav>
                 <div class="nav-actions">
-                    <button class="theme-toggle" type="button" aria-label="Cambiar modo">
-                        <span class="sun">☀</span>
-                        <span class="toggle-track">
-                            <span class="toggle-thumb"></span>
-                        </span>
-                        <span class="moon">☾</span>
-                    </button>
+                    <label class="theme-switch" for="checkbox">
+    <input type="checkbox" id="checkbox" />
+    <div class="slider track">
+        <span class="icon sun">☀️</span>
+        <span class="icon moon">🌙</span>
+    </div>
+</label>
                     <button class="lang-toggle" type="button" aria-label="Cambiar idioma" title="Cambiar idioma">
                         <span class="lang-current">ES</span>
                         <span class="lang-divider">/</span>
@@ -139,7 +140,7 @@
     </p>
 </footer>
 <h5> © 2026. Okini</h5>
-<script src="Funciones del formulario.js"></script>
+<script src="Funciones de iluminación.js"></script>
 <script src="Ajustes de idioma.js"></script>
 </body>
 </html>

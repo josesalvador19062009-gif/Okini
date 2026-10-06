@@ -89,29 +89,32 @@ const traducciones = {
     }
 };
 
-// Función principal para cambiar el idioma de la página
-function cambiarIdioma(lang) {
-    // Buscar todos los elementos que tengan el atributo data-translate
-    const elementos = document.querySelectorAll('[data-translate]');
+let idiomaActual = localStorage.getItem('idiomaSitio') || 'es';
 
-    elementos.forEach(elemento => {
-        const clave = elemento.getAttribute('data-translate');
-        if (traducciones[lang] && traducciones[lang][clave]) {
-            // Si es un input de tipo placeholder, cambiamos el placeholder en lugar del texto interno
-            if (elemento.tagName === 'INPUT' || elemento.tagName === 'TEXTAREA') {
-                elemento.placeholder = traducciones[lang][clave];
-            } else {
-                elemento.textContent = traducciones[lang][clave];
-            }
+function cambiarIdiomaAutomatico(lang) {
+    idiomaActual = lang;
+    localStorage.setItem('idiomaSitio', lang);
+
+    // Buscar todos los elementos de texto en la página
+    const elementos = document.querySelectorAll('p, span, a, h1, h2, h3, h4, h5, h6, label, button, placeholder');
+
+    elementos.forEach(el => {
+        // Verificar texto interno
+        const textoLimpio = el.textContent.trim();
+        if (traducciones[lang][textoLimpio]) {
+            el.textContent = traducciones[lang][textoLimpio];
+        }
+
+        // Verificar si es un input con placeholder
+        if (el.placeholder && traducciones[lang][el.placeholder.trim()]) {
+            el.placeholder = traducciones[lang][el.placeholder.trim()];
         }
     });
-
-    // Guardar la preferencia del usuario en el navegador
-    localStorage.setItem('idiomaSitio', lang);
 }
 
-// Cargar el idioma guardado al abrir la página (por defecto español)
+// Ejecutar al cargar la página
 document.addEventListener('DOMContentLoaded', () => {
-    const idiomaGuardado = localStorage.getItem('idiomaSitio') || 'es';
-    cambiarIdioma(idiomaGuardado);
+    if (idiomaActual === 'en') {
+        cambiarIdiomaAutomatico('en');
+    }
 });
