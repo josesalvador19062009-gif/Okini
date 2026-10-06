@@ -2,12 +2,12 @@
 :root {
     --bg-color: #ffffff;
     --text-color: black;
-    --track-bg: #ccc;
+    --track-bg: #cfcfcf;
     --thumb-bg: #ffffff;
 }
 
 [data-theme="dark"] {
-    --bg-color: #1a1a1a;
+    --bg-color: #04101e;
     --text-color: white;
     --track-bg: #444444;
     --thumb-bg: #222222;
@@ -35,16 +35,6 @@ body {
 
 .theme-switch input {
     display: none;
-}
-
-footer{
-    font-family: Kristen ITC;
-    text-align: center;
-    background-color: whitesmoke;
-    color: black;
-    margin: 1 auto;
-    font-weight: bolder;
-    font-size: 30;
 }
 
 .slider {
