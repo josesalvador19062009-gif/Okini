@@ -62,7 +62,7 @@ main {
     top: 50px;
     z-index: 10;
     font-size: 23px;
-    border-color: 6px, solid black;
+    border-color: 2px, solid black;
     border-radius: 10px;
     box-shadow: 5px 5px 15px #00a8ef;
 }

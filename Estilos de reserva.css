@@ -10,10 +10,14 @@
     margin-top: 1rem;
     padding: 0.5rem 1.25rem;
     background-color: #00a3e8;
+    transition: background-color 0.5s ease;
     color: white;
-    border: 1px;
-    border-color: black;
+    border: 1px, black;
     font-family: Century Gothic;
     font-size: 1rem;
     cursor: pointer;
+}
+
+#button:hover{
+    background-color: #001860;
 }
