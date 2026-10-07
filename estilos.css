@@ -13,6 +13,12 @@ h2{
     font-weight: bolder;
     text-align: center;
 }
+
+h3{
+    font-weight: bolder;
+    font-size: 20;
+    text-align: center;
+}
 h4{
     font-size: 30;
     font-weight: bolder;
@@ -43,6 +49,10 @@ text-align: center;
 font-size: 24;
 }
 
+a{
+    color: #00a8ef;
+    font-weight: bold;
+}
 main {
     padding: 3rem 6rem;
     max-width: 900px;
