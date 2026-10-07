@@ -84,26 +84,10 @@ br{
 
 footer{
     text-align: center;
-    margin:5 auto;
-    font-weight: bolder;
+    padding: 1rem;
+    margin: 5 auto;
+    width: 100px;
+    height: 300px;
+    max-width: 100%;
     font-size: 30;
 }
-
-#contador-tazas {
-    font-size: 1.5 rem;
-    font-weight: bolder;
-    text-align: center;
-}
-
-#boton-reserva {
-    display: block;
-    font-weight: bolder;
-    margin-top: 1rem;
-    padding: 0.5rem 1.25rem;
-    background-color: #00a3e6;
-    border-color: #00a8ef;
-    font-family: Century Gothic;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
