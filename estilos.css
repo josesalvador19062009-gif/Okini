@@ -5,12 +5,10 @@ body {
 }
 
 h1{
-    color: #1f21aa;
     font-size: 70px;
     text-align: center;
 }
 h2{
-    color: black;
     font-weight: bolder;
     text-align: center;
 }
@@ -60,7 +58,7 @@ main {
     top: 50px;
     z-index: 10;
     font-size: 23px;
-    border-color: 2px solid #000;
+    border-color: 2px solid black;
     border-radius: 10px;
     box-shadow: 5px 5px 15px #00a8ef;
 }
