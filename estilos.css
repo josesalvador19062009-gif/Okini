@@ -2,9 +2,6 @@ body {
     opacity: 1;
     background-color: white;
     font-size: 30;
-    aspect-ratio: 4/3;
-    width: 90vw;
-    height: 100vh;
     color: black;
 }
 
@@ -65,7 +62,7 @@ main {
      text-align: center;
 }
 
-.card{
+.capa{
     margin: 5 auto;
     text-align: center;
     align-items: center;
