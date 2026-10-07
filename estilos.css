@@ -53,12 +53,12 @@ main {
     font-size: 30;
      text-align: center;
 }
-#card{
+.card{
     background-color: whitesmoke;
     color: black;
+    margin: 5 auto;
     text-align: center;
     align-items: center;
-    position: absolute;
     top: 50px;
     z-index: 10;
     font-size: 23px;
