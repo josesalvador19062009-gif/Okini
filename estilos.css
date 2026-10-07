@@ -86,8 +86,6 @@ br{
 
 footer{
     text-align: center;
-    background-color: whitesmoke;
-    color: black;
     margin:5 auto;
     font-weight: bolder;
     font-size: 30;
@@ -96,7 +94,6 @@ footer{
 #contador-tazas {
     font-size: 1.5 rem;
     font-weight: bolder;
-    color: black;
     text-align: center;
 }
 
