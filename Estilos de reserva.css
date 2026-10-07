@@ -1,7 +1,6 @@
 #contador-tazas {
     font-size: 1.5 rem;
     font-weight: bolder;
-    color: black;
     text-align: center;
 }
 
@@ -10,9 +9,10 @@
     font-weight: bolder;
     margin-top: 1rem;
     padding: 0.5rem 1.25rem;
-    background-color: #1f21aa;
+    background-color: #00a3e8;
     color: white;
-    border: none;
+    border: 1px;
+    border-color: black;
     font-family: Century Gothic;
     font-size: 1rem;
     cursor: pointer;
