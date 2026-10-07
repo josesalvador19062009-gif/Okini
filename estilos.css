@@ -76,7 +76,16 @@ main {
     border-radius: 10px;
     box-shadow: 5px 5px 15px black;
 }
-
+.contenedor{
+    margin: 10 auto;
+    text-align: left;
+    top: 50px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-width: 2px;
+    border-radius: 1opx;
+    box-shadow: 5px 5px 15px gray;
+}
 br{
     font-size: 30;
     font-weight: bolder;
@@ -99,7 +108,7 @@ br{
 
 footer{
     border: 2px solid black;
-    box-shadow: 2px 2px 12px #cfcfcf;
+    box-shadow: 2px 2px 12px gray;
     border-width: 2px;
     border-radius: 10px;
     text-align: center;
