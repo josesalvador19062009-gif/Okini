@@ -56,6 +56,7 @@ main {
     text-align: center;
     align-items: center;
     top: 50px;
+    opacity: 4;
     z-index: 10;
     font-size: 23px;
     border: 2px solid black;
@@ -72,6 +73,7 @@ br{
 .metodo-titulo {
     font-size: 3.0rem;
     font-weight: bolder;
+    empty-cells: show;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     text-align: center;
@@ -85,7 +87,7 @@ br{
 
 footer{
     border: 2px solid black;
-    box-shadow: 5px 5px 15px black;
+    box-shadow: 2px 2px 12px #cfcfcf;
     border-width: 2px;
     border-radius: 10px;
     text-align: center;
