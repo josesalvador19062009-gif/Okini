@@ -61,7 +61,7 @@ main {
     font-size: 20px;
     margin: 5 auto;
     border-color: #00a8ef;
-    border: 1rem;
+    border: 1px;
     background-color: whitesmoke;
     color: black;
     animation: forwards;
