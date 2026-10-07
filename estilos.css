@@ -83,6 +83,10 @@ br{
     }
 
 footer{
+    border: 2px solid black;
+    box-shadow: 5px 5px 15px black;
+    border-width: 2px;
+    border-radius: 10px;
     text-align: center;
     margin: 5 auto;
     font-size: 30;
