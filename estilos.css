@@ -77,7 +77,8 @@ main {
     box-shadow: 5px 5px 15px black;
 }
 .contenedor{
-    margin: 5 auto;
+    margin: 20px;
+    padding: 10px;
     text-align: left;
     top: 50px;
     font-size: 20px;
