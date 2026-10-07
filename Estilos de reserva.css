@@ -12,8 +12,9 @@
     background-color: #00a3e8;
     transition: #001860 0.5s ease;
     color: white;
-    border: 2px, black;
+    border: 2px solid black;
     border-radius: 10px;
+    box-shadow: 5px 5px 15px #00a8ef;
     border-width: 2px;
     font-family: Century Gothic;
     font-size: 1rem;
