@@ -53,21 +53,11 @@ main {
     font-size: 30;
      text-align: center;
 }
-#micapa{
-    top: 70px;
-    left: 20px;
-    padding: 12rcap;
-    position: absolute;
-    font-size: 20px;
-    margin: 5 auto;
-    border-color: #00a8ef;
-    border: 1px;
-    background-color: whitesmoke;
-    color: black;
-    animation: forwards;
-    animation-duration: 3ms;
-    align-items: normal;
-text-align: center;
+.card{
+    font-size: 23px;
+    border: 6px, solid #00a8ef;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #00a8ef;
 }
 
 br{
