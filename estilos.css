@@ -56,12 +56,15 @@ main {
 #micapa{
     top: 70px;
     left: 20px;
-    padding: 2rcap;
+    padding: 12rcap;
     position: absolute;
     font-size: 20px;
     margin: 5 auto;
+    border-color: #00a8ef;
+    border: 1rem;
     background-color: whitesmoke;
     color: black;
+    animation: forwards;
 text-align: center;
 }
 
