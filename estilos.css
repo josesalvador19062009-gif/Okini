@@ -70,7 +70,6 @@ main {
     top: 50px;
     border: 1px solid color-mix(in srgb,var(--line) 70%,transparent);
     border-bottom: 1px solid color-mix(in srgb,var(--line) 70%,transparent);
-    transition: .3s;
     border-width: 10px;
     box-shadow: 2px 2px 10px color-mix(in srgb,var(--line) 70%,transparent);
      font-size: 23px;
