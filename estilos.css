@@ -73,9 +73,12 @@ main {
     transition: .3s;
     border-width: 10px;
     box-shadow: 2px 2px 10px color-mix(in srgb,var(--line) 70%,transparent);
+     font-size: 23px;
+    :hover{
     transition: #0d6cf4;
     transition-duration: .3s;
-    font-size: 23px;
+     cursor: pointer;
+    }
 }
 
 .contenedor{
@@ -87,8 +90,12 @@ main {
     border-bottom: 1px solid color-mix(in srgb,var(--line) 70%,transparent);
     box-shadow: 2px 2px 10px color-mix(in srgb,var(--line) 70%,transparent);
     border-width: 10px;
-    transition: .3s;
     font-size: 20px;
+    :hover{
+    transition: #0d6cf4;
+    transition-duration: .3s;
+    cursor: pointer;
+    }
 }
 
 
@@ -120,9 +127,4 @@ footer{
     text-align: center;
     margin: 5 auto;
     font-size: 30;
-}
-.hover{
-    cursor: pointer;
-    border-color: #0d6cf4;
-    transition-duration: 0.5s;
 }
