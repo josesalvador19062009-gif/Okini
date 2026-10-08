@@ -73,7 +73,7 @@ main {
     box-shadow: 2px 2px 10px color-mix(in srgb,var(--line) 70%,transparent);
      font-size: 23px;
     :hover{
-        transition: all;
+    transition: all;
     color: #0d6cf4;
     border-color: 1px solid #0d6cf4;
     border-bottom: #0d6cf4;
