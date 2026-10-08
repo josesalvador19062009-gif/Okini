@@ -84,9 +84,23 @@ main {
     font-size: 20px;
     border: 2px solid black;
     border-width: 2px;
-    border-radius: 1opx;
+    border-radius: 10px;
     box-shadow: 5px 5px 15px gray;
 }
+.contenedorcontacto{
+    margin: 20px;
+    padding: 10px;
+    text-align: left;
+    top: 50px;
+    font-size: 16px;
+    font-family: Verdana;
+    color: #001860;
+    border: 2px solid black;
+    border-width: 2px;
+    border-width: 10px;
+    box-shadow: 5px 5px 15px gray;
+}
+
 br{
     font-size: 30;
     font-weight: bolder;
