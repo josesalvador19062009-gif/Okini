@@ -25,6 +25,10 @@ h4{
     font-weight: bolder;
     background-color: #0d6cf4;
     padding: 3.5rch 2rem;
+    :hover{
+        cursor: point;
+        color: black;
+    }
 }
 h5{
     font-size: 30;
