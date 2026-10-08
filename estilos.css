@@ -71,6 +71,7 @@ main {
     border-bottom: 1px solid color-mix(in srgb,var(--line) 70%,transparent);
     transition: .3s;
     border-width: 1px;
+    box-shadow: 2px 2px 10px color-mix(in srgb,var(--line) 70%,transparent);
     transition: .3s;
     font-size: 23px;
 }
@@ -80,7 +81,9 @@ main {
     padding: 10px;
     text-align: left;
     top: 50px;
-        border-bottom: 1px solid color-mix(in srgb,var(--line) 70%,transparent);
+    border-bottom: 1px solid color-mix(in srgb,var(--line) 70%,transparent);
+    box-shadow: 2px 2px 10px color-mix(in srgb,var(--line) 70%,transparent);
+    border-width: 1px;
     transition: .3s;
     font-size: 20px;
 }
