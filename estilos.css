@@ -28,6 +28,7 @@ h4{
     :hover{
         cursor: point;
         color: black;
+        transition: .3s;
     }
 }
 h5{
