@@ -75,6 +75,7 @@ main {
     :hover{
         transition: all;
     color: #0d6cf4;
+    color: --var(h4);
     border-color: 1px solid #0d6cf4;
     border-bottom: #0d6cf4;
     transition-duration: .3s;
