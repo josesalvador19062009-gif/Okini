@@ -68,25 +68,23 @@ main {
     text-align: center;
     align-items: center;
     top: 50px;
-    z-index: 10;
-    font-size: 23px;
-    border: 1px solid gray;
+    border-bottom: 1px solid color-mix(in srgb,var(--line) 70%,transparent);
+    transition: .3s;
     border-width: 1px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 15px gray;
+    transition: .3s;
+    font-size: 23px;
 }
+
 .contenedor{
     margin: 5 auto;
     padding: 10px;
     text-align: left;
     top: 50px;
-    z-index: 10;
+        border-bottom: 1px solid color-mix(in srgb,var(--line) 70%,transparent);
+    transition: .3s;
     font-size: 20px;
-    border: 0px solid gray;
-    border-width: 1px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 15px gray;
 }
+
 
 br{
     font-size: 30;
