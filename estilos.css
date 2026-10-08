@@ -25,12 +25,8 @@ h4{
     font-weight: bolder;
     background-color: #0d6cf4;
     padding: 3.5rch 2rem;
-    :hover{
-        cursor: point;
-        color: black;
-        transition: .3s;
-    }
 }
+
 h5{
     font-size: 30;
    font-weight: bold;
@@ -80,7 +76,7 @@ main {
     border-color: 1px solid #0d6cf4;
     transition-duration: .3s;
      cursor: pointer;
-    }
+    };
 }
 
 .contenedor{
