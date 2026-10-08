@@ -92,6 +92,7 @@ main {
     border-width: 10px;
     font-size: 20px;
     :hover{
+        transition: all;
     border-color: 1px solid #0d6cf4;
 border-bottom:#0d6cf4 ;
     transition-duration: .3s;
