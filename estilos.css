@@ -58,7 +58,6 @@ main {
     padding: 3rem 6rem;
     max-width: 900px;
     margin: 0 auto;
-    text-transform: uppercase;
     font-size: 30;
      text-align: center;
 }
@@ -76,10 +75,11 @@ main {
     box-shadow: 5px 5px 15px gray;
 }
 .contenedor{
-    margin: 20px;
+    margin:5 auto;
     padding: 10px;
     text-align: left;
     top: 50px;
+    z-index: 10;
     font-size: 20px;
     border: 2px solid gray;
     border-width: 2px;
