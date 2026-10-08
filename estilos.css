@@ -74,6 +74,8 @@ main {
     box-shadow: 2px 2px 10px color-mix(in srgb,var(--line) 70%,transparent);
      font-size: 23px;
     :hover{
+        background-color: whitesmoke;
+        color: #0d6cf4;
    border-color: #0d6cf4;
     transition-duration: .3s;
      cursor: pointer;
@@ -91,6 +93,8 @@ main {
     border-width: 10px;
     font-size: 20px;
     :hover{
+        color: #0d6cf4;
+        background-color: whitesmoke;
     border-color: #0d6cf4;
     transition-duration: .3s;
     cursor: pointer;
